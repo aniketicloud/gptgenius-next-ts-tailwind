@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import { SiOpenaigym } from "react-icons/si";
+import ThemeToggle from "./ThemeToggle";
 
 const SidebarHeader = () => {
   return (
-    <div>SidebarHeader</div>
-  )
-}
+    <div className="flex items-center mb-4 gap-4 px-4">
+      <SiOpenaigym className="w-10 h-10 text-primary" />
+      <h3 className="text-xl font-extrabold text-primary">GPTGenius</h3>
+      <ThemeToggle />
+    </div>
+  );
+};
 
-export default SidebarHeader
+export default SidebarHeader;
